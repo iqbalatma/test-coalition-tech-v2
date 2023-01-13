@@ -1,8 +1,10 @@
 import jQuery from "jquery";
 import _ from "lodash";
+import Swal from "sweetalert2";
 
 window._ = _;
 window.$ = window.jQuery = jQuery;
+window.Swal = Swal;
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

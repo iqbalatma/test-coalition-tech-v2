@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="{{ asset('dist/assets/images/logo/favicon.png') }}" type="image/png">
 
     <link rel="stylesheet" href="{{ asset('dist/assets/css/shared/iconly.css') }}">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 
 <body>
@@ -70,6 +70,8 @@
     </div>
     <script src="{{ asset('dist/assets/js/bootstrap.js') }}"></script>
     <script src="{{ asset('dist/assets/js/app.js') }}"></script>
+    @vite("resources/js/app.js")
+    @yield("custom-scripts")
 </body>
 
 </html>
